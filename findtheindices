@@ -1,0 +1,9 @@
+class Solution:
+    def targetIndices(self, nums: List[int], target: int) -> List[int]:
+        sol=[]
+        nums.sort()
+        for i in range(len(nums)):
+            if nums[i]==target:
+                sol.append(i)
+        return sol
+        
